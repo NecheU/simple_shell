@@ -3,6 +3,7 @@
 
 
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -14,6 +15,12 @@
 #include <fcntl.h>
 #include <errno.h>
 
+
+
+void get_command(char *com, size_t size);
+void exec_command(const char *com);
+void cstm_print(const char *str);
+void print_prompt();
 
 
 #endif
